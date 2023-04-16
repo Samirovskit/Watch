@@ -494,21 +494,6 @@ var(--H-inputfs), var(--H-inputfwght), var(--H-inputff), var(--H-inputmaxh), var
                    @include shadow(darken(rgba(23,23,23,1), 65%), lighten(rgba(23,23,23,1), 24%), 
                    1.9px, 1.5px, 0px, -1.9px, 1.5px, 0px,   0px, 0px, 0px,  0px, 0px, 0px);
 & text             {font-size : 30px; fill : var(--Switch-color);}}}}
-//<--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ GRID FORTH ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->\\ 
-
-:root{
---TCSMG-Forth-h    : clamp(30px, 2.5vh, 200px);}
-
-#TCSM-Grid .Forth  {@include Flex(0, 0, 100%, var(--TCSMG-Forth-h), flex); box-shadow : var(--Boxshadow-2-s); 
-                    justify-content:space-around; 
-& button           {@include HeaderButton;      &.opac  {visibility : hidden} 
-&.icon             {fill  : var(--Switch-color); width : 10%; border : 0.5px solid var(--Switch-color); 
-& text             {font-size : 30px; fill : var(--Switch-color);}} 
-&.elem             {border-radius : 10px; max-width : 280px; 
-                   @include shadow(darken(rgba(23,23,23,1), 65%), lighten(rgba(23,23,23,1), 24%), 
-                   1.9px, 1.5px, 0px, -1.9px, 1.5px, 0px,   0px, 0px, 0px,  0px, 0px, 0px);
-& text             {font-size : 30px; fill : var(--Switch-color);}}}}
-
 
 
 
