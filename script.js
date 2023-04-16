@@ -1,4 +1,4 @@
-<!--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ GLOBAL VARIABLES ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
+//<--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ GLOBAL VARIABLES ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
 const $                      = document.querySelector.bind(document)
 const $$                     = document.querySelectorAll.bind(document)
 const showlogo4url           = "showlogo"//Global_Url Uniqueurl Yoururl
@@ -20,17 +20,17 @@ let htmlplayer =`
 rossorigin autoplay controls muted playsinline webkit-playsinline data-mejsoptions preload       poster="https://s.cdpn.io/6035/vp_poster.jpg">
 <source src=""> 
 <track kind="captions" src="" srclang="" label="" default> 
-</video></div><!--⚠️End_STCMCA-Player-video1-->
+</video></div>//--⚠️End_STCMCA-Player-video1-->
   
-<!--⭕embed-->
+//--⭕embed-->
 <div class="Player-embed" id="">
 <iframe class="ST-iframe-embed" id=""
 sandbox = "allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-popup"
 allowfullscree allowtransparency overflow ="hidden" allow="autoplay" autoplay="1" mute="1" width="100" height="100"  frameborder ="0" src=""></iframe></div>` 
 
 
-<!--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ FUNCTIONS ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
-                               <!-- 💚💚💚💚💚💚 CREATE SPANS 💚💚💚💚💚💚 -->
+//--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ FUNCTIONS ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
+                               //-- 💚💚💚💚💚💚 CREATE SPANS 💚💚💚💚💚💚 -->
 function CreateSpans(Lists, where, how)   {Lists.forEach( (List, index) => { 
 const SpanClass       = List.ASpan_class==null  ? Lists[0].GSpan_class : List.ASpan_class+" "+Lists[0].GSpan_class;
 const SpanId          = Lists[0].Span_idroot==null?``: Lists[0]['Span_idroot']+index;
@@ -70,7 +70,7 @@ var SubButtonsdata = List.SubButtons.split("🪷");
 for (var k = 0; k < SubButtonsdata.length; k++) {
 SubButtons += `<button class="`+SubButtonsdata[k].split("🔲")[0]+" "+SubButtonsdata[k].split("🔲")[1]+` Stream elem toswitch subbutton" Stream="`+SubButtonsdata[k].split("🔲")[2]+"🔲"+SubButtonsdata[k].split("🔲")[3]+"🔲"+SubButtonsdata[k].split("🔲")[4]+`">
 <svg class="elem toactivet" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><text x="50%" y="50%">`+SubButtonsdata[k].split("🔲")[0]+`</text></svg> 
-<!--svg class="icon toactivet" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+//--svg class="icon toactivet" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
 <text class="FA" x="50%" y="50%">&#xe132;</text><text class="FA" x="50%" y="50%">&#xf00d;</text> </svg--></button>`}} 
  
  
@@ -96,7 +96,7 @@ document.querySelector(where).insertAdjacentHTML(how, Box)});}
 
 
 
-                               <!-- 💚💚💚💚💚💚 RESET CONTAINER 💚💚💚💚💚💚 -->
+                               //-- 💚💚💚💚💚💚 RESET CONTAINER 💚💚💚💚💚💚 -->
 function resetContainerItems(where, heightFrom, heightMinus, PresentationStyle, classToresize, widthInput) {
 
 const cssObj       = window.getComputedStyle(document.querySelector(where),null)
@@ -156,7 +156,7 @@ document.querySelector(where).style.setProperty('--width', itemWidth + 'px' )
 document.querySelector(where).style.setProperty('--height', itemHeight + 'px')}}   
 
 
-                               <!-- 💚💚💚💚💚💚 VIDEO PLAY 💚💚💚💚💚💚 --> 
+                               //-- 💚💚💚💚💚💚 VIDEO PLAY 💚💚💚💚💚💚 --> 
 function videoplayer(playurl, typeurl, trackurl, tracklangue, playerid, playcmd, showlogo){
 document.querySelector(playerid).innerHTML = htmlplayer;
 
@@ -448,7 +448,7 @@ targetvideo.parentElement.style.display   = 'none';
 targetiframe.parentElement.style.display  = 'block';}}
 
 
-                                 <!-- 💚💚💚💚💚💚 REPEAT 💚💚💚💚💚💚 -->
+                                 //-- 💚💚💚💚💚💚 REPEAT 💚💚💚💚💚💚 -->
 function Repeat(Elem1, Elem2, Class, timing){
 let i = 1; var repeater = () => {
    setTimeout(function(){
@@ -468,8 +468,8 @@ let i = 1; var repeater = () => {
 
 
 
-<!--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ CREATE ELEMENTS ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
-                             <!-- 💚💚💚💚💚💚 INCREASE VIEWS 💚💚💚💚💚💚 -->
+//--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ CREATE ELEMENTS ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
+                             //-- 💚💚💚💚💚💚 INCREASE VIEWS 💚💚💚💚💚💚 -->
 let IVSpan = [
 {"GSpan_class":"IVST",  "NrIcon_Elem":"3", 
 "Gicon1_class":"icon", "Gelem1_class":"elem", "Gicon2_class":"icon toactivet", "Gelem2_class":"elem", "Gicon3_class":"icon toactivet",
@@ -477,7 +477,7 @@ let IVSpan = [
 "icon1":"", "elem1":"Up Views", "icon2":"&#xf509;", "elem2":"زيادة المشاهدات", "icon3":"&#xe4b7;", "ASpan_class":""},]
 CreateSpans(IVSpan, "#TCSH-IV-Button", "beforeend");
 
-                             <!-- 💚💚💚💚💚💚 FILTER SIZE 💚💚💚💚💚💚 -->
+                             //-- 💚💚💚💚💚💚 FILTER SIZE 💚💚💚💚💚💚 -->
 let FSizeSpans = [
 {"GSpan_class":"FSize",  "NrIcon_Elem":"3", 
 "Gicon1_class":"icon", "Gelem1_class":"elem", "Gicon2_class":"icon",  "Gelem2_class":"elem", 
@@ -487,7 +487,7 @@ let FSizeSpans = [
 {"icon1":"&#xf1de;", "elem1":"Manual_Size", "icon1_class":"toactivet", "icon2":"", "icon2_class":"hide", "elem2_class":"hide input", "elem2":"Notext", "Notext2": '<input type="range" value="1000" min="200" max="3000" step="20">', "icon3":"", "icon3_class":"icon", "ASpan_class":"FSizeDD Scroll hide"},]
 CreateSpans(FSizeSpans, "#TCSH-Filter-Button ul.FilterSize", "beforeend"); 
 
-                             <!-- 💚💚💚💚💚💚 ADD SCREENS 💚💚💚💚💚💚 -->
+                             //-- 💚💚💚💚💚💚 ADD SCREENS 💚💚💚💚💚💚 -->
 let AddScreendata = [
 {"GSpan_class":"",  "NrIcon_Elem":"3", 
 "Gicon1_class":"icon Minus AddScreen click", "Gelem1_class":"elem", "Gicon2_class":"icon Plus AddScreen click", 
@@ -496,7 +496,7 @@ let AddScreendata = [
 CreateSpans(AddScreendata, "#TCSH-Filter-Button ul.AddScreen", "beforeend"); 
 
 
-                             <!-- 💚💚💚💚💚💚 SCREENS 💚💚💚💚💚💚 -->
+                             //-- 💚💚💚💚💚💚 SCREENS 💚💚💚💚💚💚 -->
 let ScreensData = [
 {"GSpan_class":"Screen",  "NrIcon_Elem":"6", "Span_idroot":"Screen", "GBlocktxt_idroot":"Data", "GBlockplayer_idroot":"Player", 
 "Gicon1_class":"icon datascreen original Play toswitch",
@@ -520,7 +520,7 @@ ScreensData.push(
 CreateSpans(ScreensData, "#TCSMA-Screens", "beforeend");
 
 
-                             <!-- 💚💚💚💚💚💚 YEARS 💚💚💚💚💚💚 -->
+                             //-- 💚💚💚💚💚💚 YEARS 💚💚💚💚💚💚 -->
 let YearsData = [
 {"GSpan_class":"Send Year click",  "NrIcon_Elem":"1", "Gicon1_class":"icon", "Gelem1_class":"elem", 
  "icon1":"", "icon1_switch":"", "elem1":"All", "ASpan_class":"All"},]
@@ -531,8 +531,8 @@ YearsData.push(
 
 CreateSpans(YearsData, "#TCSM-Grid .Third .Years", "beforeend");
 
-<!--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ STREAMING ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
-                               <!-- 💚💚💚💚💚💚 STREAMING DATA 💚💚💚💚💚💚 -->
+//--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ STREAMING ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
+                               //-- 💚💚💚💚💚💚 STREAMING DATA 💚💚💚💚💚💚 -->
 
 let StreamData      = [
 {"Catg" :"Channels⚡️&#xf26c;⚡️قنوات⚡️red",          "SubcatgN":"3",      "Subcatg1":"Bouquets⚡️&#xf535;⚡️باقات⚡️",                                                                             "Subcatg2":"Categories⚡️&#xf5fd;⚡️النوع⚡️",                                                                           "Subcatg3":"Contries⚡️&#xf7a2;⚡️الدول⚡️"},
@@ -547,13 +547,13 @@ let StreamData      = [
 
 {"Catg" :"Your_History⚡️&#xf1da;⚡️متابعاتك⚡️white",  "SubcatgN":"0",      "Subcatg1":"Store⚡️⚡️⚡️"},]
 
-                             <!-- 💚💚💚💚💚💚 GRID2 CLASS 💚💚💚💚💚💚 -->
+                             //-- 💚💚💚💚💚💚 GRID2 CLASS 💚💚💚💚💚💚 -->
 let G2_Bouquets_class  =`Bouquets `;
 let G2_Categories_class=`Categories `;
 let G2_Contries_class  =`Contries `;
 let G2_Languages_class =``;
 
-                            <!-- 💚💚💚💚💚💚 ARRAYS 💚💚💚💚💚💚 -->
+                            //-- 💚💚💚💚💚💚 ARRAYS 💚💚💚💚💚💚 -->
 let CMSHButton = [
 {"GSpan_class":"CMSH",  "NrIcon_Elem":"3", 
 "Gicon1_class":"icon toswitch toactivet", "Gelem1_class":"elem", "Gicon2_class":"icon toactivet", "Gelem2_class":"elem", "Gicon3_class":"icon",
@@ -571,7 +571,7 @@ let FCatButton = [
 let Grid1Spans  = []
 
 
-                            <!-- 💚💚💚💚💚💚 CMSHDD AND FCatDD 💚💚💚💚💚💚 -->
+                            //-- 💚💚💚💚💚💚 CMSHDD AND FCatDD 💚💚💚💚💚💚 -->
 StreamData.forEach(el => {  
 CMSHButton.push(
 {"icon1":"", "icon1_switch":"&#xf0c9;", "elem1":""+el.Catg.split("⚡️")[0]+"", "icon2":""+el.Catg.split("⚡️")[1]+"", "elem2":""+el.Catg.split("⚡️")[2]+"", "ASpan_class":""+el.Catg.split("⚡️")[0]+" "+el.Subcatg1.split("⚡️")[0]+" CMSHDD hide", "Target":""+el.Catg.split("⚡️")[3]+""});
@@ -597,8 +597,8 @@ CreateSpans(FCatButton, "#TCSH-Filter-Button ul:nth-child(3)", "beforeend");
 CreateSpans(Grid1Spans,  "#TCSM-Grid .First", "beforeend"); 
 
 
-                            <!-- 💚💚💚💚💚💚 GRID2 💚💚💚💚💚💚 -->
-<!--🪷BOUQUETS-->
+                            //-- 💚💚💚💚💚💚 GRID2 💚💚💚💚💚💚 -->
+//--🪷BOUQUETS-->
 let icon2Bq = "&#xf204;"; let icon2BqS = "&#xf00d;";
 
 let G2_Bouquets = [
@@ -616,7 +616,7 @@ CreateSpans(G2_Bouquets, "#TCSM-Grid .Second.snd", "beforeend");
 
 
 
-<!--🪷CATEGORIES-->
+//--🪷CATEGORIES-->
 let icon2Catg = "&#xf204;"; let icon2CatgS = "&#xf00d;";
 let G2_Categories = [
 {"GSpan_class":"G2Span "+G2_Categories_class+"", "NrIcon_Elem":"3", "Gelem1_class":"elem", "Gicon2_class":"icon toactivet", "Gelem2_class":"elem",
@@ -653,7 +653,7 @@ G2_Categories.push({"elem1":""+el.nameen+"", "icon2":""+icon2Catg+"", "icon2_swi
 CreateSpans(G2_Categories, "#TCSM-Grid .Second.snd", "beforeend"); 
 
 
-<!--🪷CONTRIES-->
+//--🪷CONTRIES-->
 let icon2Cont = "&#xf204;"; let icon2ContS = "&#xf00d;";
 let G2_Contries   = [
 {"GSpan_class":"G2Span "+G2_Contries_class+"", "NrIcon_Elem":"3", "Gelem1_class":"elem", "Gicon2_class":"icon toactivet", "Gelem2_class":"elem",
@@ -689,7 +689,7 @@ CreateSpans(G2_Contries, "#TCSM-Grid .Second.snd", "beforeend");
 
 
 
-<!--🪷LANGUAGES-->
+//--🪷LANGUAGES-->
 let icon2Lang = "&#xf204;"; let icon2LangS = "&#xf00d;";
 let G2_Languages = [
 {"GSpan_class":"G2Span "+G2_Languages_class+"", "NrIcon_Elem":"3", "Gelem1_class":"elem", "Gicon2_class":"icon toactivet", "Gelem2_class":"elem",
@@ -721,7 +721,7 @@ CreateSpans(G2_Languages, "#TCSM-Grid .Second.snd", "beforeend");
 
 
 
-<!--🪷CATEGORIES-->
+//--🪷CATEGORIES-->
 let icon2UrlsType = "&#xf204;"; let icon2UrlsTypeS = "&#xf00d;";
 
 let G2_UrlsType = [
@@ -764,9 +764,9 @@ CreateSpans(G2_UrlsType, "#TCSMA-Urlstype", "beforeend");
 
 
 
-                            <!-- 💚💚💚💚💚💚 GRID3 💚💚💚💚💚💚 -->
+                            //-- 💚💚💚💚💚💚 GRID3 💚💚💚💚💚💚 -->
 
-<!--🪷CHANNELS-->
+//--🪷CHANNELS-->
 let icon2Chan = "&#xf204;"; let icon2ChanS = "&#xf00d;";
 let G3_Channels = [
 {"GSpan_class":"Your_History G3Span Stream "+StreamData[0].Catg.split("⚡️")[0]+" "+StreamData[0].Subcatg1.split("⚡️")[0]+" "+StreamData[0].Subcatg2.split("⚡️")[0]+" "+StreamData[0].Subcatg3.split("⚡️")[0]+"", "NrIcon_Elem":"3", "Gelem1_class":"elem", "Gicon2_class":"icon toactivet", "Gelem2_class":"elem",
@@ -797,7 +797,7 @@ CreateSpans(G3_Channels, "#TCSM-Grid .Third", "beforeend");
 
 
 
-<!--🪷MOVIES AMERICAN-->
+//--🪷MOVIES AMERICAN-->
 let icon2AmericMo = "&#xf204;"; let icon2AmericMoS = "&#xf00d;";
 let G3_Americain_Movies = [
 {"GSpan_class":"All Your_History G3Span "+StreamData[1].Catg.split("⚡️")[0]+" "+StreamData[1].Subcatg1.split("⚡️")[0]+"", "NrIcon_Elem":"3", "Gelem1_class":"elem", "Gicon2_class":"icon toactivet", "Gelem2_class":"elem",
@@ -829,7 +829,7 @@ G3_Americain_Movies.push({"elem1":""+el.nameen+"", "icon2":""+icon2AmericMo+"", 
 CreateSpans(G3_Americain_Movies, "#TCSM-Grid .Third", "beforeend");
 
 
-<!--🪷MOVIES ARABIC-->
+//--🪷MOVIES ARABIC-->
 let G3_Arabic_Movies = [
 {"GSpan_class":"Your_History G3Span "+StreamData[1].Catg.split("⚡️")[0]+" "+StreamData[1].Subcatg2.split("⚡️")[0]+"", "NrIcon_Elem":"3", "Gelem1_class":"elem", "Gicon2_class":"icon toactivet", "Gelem2_class":"elem",
 
@@ -842,32 +842,32 @@ CreateSpans(G3_Arabic_Movies, "#TCSM-Grid .Third", "beforeend");
 
 
 
-<!--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ FILTERS ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
+//--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ FILTERS ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
 function Reseting(elem, match)
 {resetContainerItems("#TCSMA-Screens", "TCSM-Area", $(".IVST").matches(".active") ? "TCSMA-Urlstype" : "", elem.matches(match)? "AutoSize":"Scroll",  ".Screen:not(.hide)", ".FSize.Scroll input");}
 
 
-<!--🪷BUTTONS-->
+//--🪷BUTTONS-->
 $$("#Landing span").forEach((elem, i)=>{elem.addEventListener("click",function(){
 $$("#Landing span, #Landing img").forEach(el => {el.classList.remove("active");})
 $$("#Landing span")[i].classList.add("active"); 
 $$("#Landing img")[i].classList.add("active");})})
 Repeat("#Landing span", "#Landing img", "active", 3000)
 
-<!--🪷SLIDES-->
+//--🪷SLIDES-->
 $$("#Landing img").forEach(elem=>{elem.addEventListener("click",function(){
 $("#All-Containers .CENTER").classList.add("Switch"); 
 $(".FSizeDD.AutoSize").click();})})
 
-                             <!-- 💚💚💚💚💚💚 LEFT 💚💚💚💚💚💚 -->
-<!--🪷THEMESWITCH-->
+                             //-- 💚💚💚💚💚💚 LEFT 💚💚💚💚💚💚 -->
+//--🪷THEMESWITCH-->
 $$(".ThemeSwitcher").forEach(elem=>{elem.addEventListener("click",function(){
 $$(".ThemeSwitcher").forEach(el=>{el.classList.remove("active")}); 
 elem.classList.add("active"); 
 document.firstElementChild.setAttribute("Theme-Style", elem.getAttribute("value"));})})
 
-                             <!-- 💚💚💚💚💚💚 HEADER 💚💚💚💚💚💚 -->
-<!--🪷FSizeST--> 
+                             //-- 💚💚💚💚💚💚 HEADER 💚💚💚💚💚💚 -->
+//--🪷FSizeST--> 
 $$(".FSize").forEach(elem=>{elem.addEventListener("click",function(){
 if(elem.matches(".FSizeST")){
 elem.matches(".Opened") ? elem.classList.remove("Opened") : elem.classList.add("Opened");} 
@@ -881,7 +881,7 @@ else                                {$(".FSize.Scroll .elem").classList.add("hid
                                      $(".FSize.Scroll .elem.input").classList.remove("hide");}}})})
 
 
-<!--🪷IV--> 
+//--🪷IV--> 
 $(".IVST").addEventListener("click",function(){  
 this.classList.add("active");
 $$(".FCat, .CMSH, .G1Span, .G2Span, .G3Span").forEach(el=>{el.classList.remove("active","intop","run","Opened","expand", "switch")}); 
@@ -906,7 +906,7 @@ $$("#TCSM-Grid .First, #TCSM-Grid .Second, #TCSM-Grid .Forth, .G3Span").forEach(
 $("#TCSM-Grid").classList.add("hide");
 $(".FSizeDD.active").click();})
 
-<!--🪷HIDE_UNHIDE_SCREENS-->
+//--🪷HIDE_UNHIDE_SCREENS-->
 $$(".AddScreen").forEach(elem=>{elem.addEventListener(elem.matches(".click")?"click":"input",function(){
 var screenadd =document.querySelector(".AddScreen.input").value;
  
@@ -965,9 +965,9 @@ $("#Screen0").classList.add("Destination");}
 //Reseize
 Reseting($(".FSize.AutoSize"), ".active")})}) 
 
-<!--🪷CMSHST--> 
+//--🪷CMSHST--> 
 $(".CMSHST").addEventListener("click",function(){
-<!--CMSHST-Close-->
+//--CMSHST-Close-->
 if(this.matches(".Opened"))        {
 $$(".CMSHST, .FSizeST").forEach(el => {el.classList.remove("Opened")}); 
 $$(".CMSHST .toswitch,  .FSizeST .toswitch").forEach(el => {el.classList.remove("switch");})
@@ -977,7 +977,7 @@ $$(".CMSH").forEach(el => {
  if(el.matches(".CMSHST.active"))  {el.classList.remove("hide");}
  if(el.matches(".CMSHDD.active"))  {el.classList.remove("hide"); el.classList.add("intop");
                                     el.querySelector("button.toswitch").classList.add("switch");}})}
-<!--CMSHST-Open-->
+//--CMSHST-Open-->
 else {
 this.classList.add("Opened", "active"); this.querySelector("button.toswitch").classList.add("switch"); 
 if($(".IVST").matches(".active")){ $$(".Player").forEach(el=>{el.innerHTML=""}); 
@@ -988,9 +988,9 @@ $$("#TCSMA-Urlstype, .Global_Url, .datascreen").forEach(el=>{el.classList.add("h
 $$(".CMSHDD,#TCSM-Grid,.FCatST, .datascreen.original:not(.Downloads)").forEach(el=>{el.classList.remove("hide","no")}) 
 $(".FSizeDD.active").click();}})
 
-<!--🪷CMSHDD-->
+//--🪷CMSHDD-->
 $$(".CMSHDD").forEach(elem=>{elem.addEventListener("click",function(){
-<!--CMHDD InTop-> 
+//--CMHDD InTop-> 
 if(elem.matches(".intop"))    {
 $(".CMSHST").classList.add("Opened"); 
 $(".CMSHST .toswitch").classList.add("switch"); 
@@ -1005,7 +1005,7 @@ if($(".FCatDD.active")===null){$(".FCatST").classList.remove("hide");}
 else                          {$(".FCatDD.active").classList.remove("hide");}  
 elem.classList.remove("intop");}
  
-<!--CMSHDD-To=>filter>
+//--CMSHDD-To=>filter>
 else {
 if(elem.matches(".active"))       { 
 $$(".CMSH").forEach(el=>{el.classList.add("hide")}); 
@@ -1047,11 +1047,11 @@ if(!elem.matches(".Movies, .TVShows"))   {$(".YearST").classList.add("opac");
 
 elem.classList.add("active","intop"); elem.classList.remove("hide"); elem.querySelector("button.toswitch").classList.add("switch");}})})
 
-<!--🪷FCat--> 
+//--🪷FCat--> 
 $$(".FCat").forEach(elem=>{elem.addEventListener("click",function(){
 //⭕️FCatST
 if(elem.matches(".FCatST.run"))   {  
-<!--FCatST-Close-->
+//--FCatST-Close-->
 if(elem.matches(".Opened"))       {
 elem.classList.remove("Opened"); 
 elem.classList.add("active"); 
@@ -1064,7 +1064,7 @@ $$(".FCat").forEach(el =>           {
        {$(".FCatST").classList.remove("hide");}
   else {$(".FCatDD.active").classList.remove("hide");}}
  
-<!--FCatST-Open-->
+//--FCatST-Open-->
 else {
 elem.classList.add("Opened"); 
 elem.classList.add("active"); 
@@ -1075,7 +1075,7 @@ if(el.matches(".FCatDD.run"))    {el.classList.remove("hide");
  
 //⭕️FCatDD
 if(elem.matches(".FCatDD.run")) {  
-<!--FCatDD InTop-> 
+//--FCatDD InTop-> 
 if(elem.matches(".intop"))      {  
 $$(".FCat").forEach(el =>           { 
 if(el.matches(".FCatST"))       {el.classList.add("Opened");
@@ -1084,7 +1084,7 @@ if(el.matches(".FCat.run"))     {el.classList.remove("hide");}
 if(el.matches(".FCatDD.run"))   {el.querySelector("button.toswitch").classList.remove("switch");}})
 elem.classList.remove("intop");} 
  
- <!--FCatDD-To=>filter>
+ //--FCatDD-To=>filter>
 else {
 $$(".FCat").forEach(el=>{el.classList.add("hide"); el.classList.remove("active","intop")});
  
@@ -1097,7 +1097,7 @@ elem.classList.add("active","intop");
 elem.classList.remove("hide"); 
 elem.querySelector("button.toswitch").classList.add("switch");}}})})
 
-<!--🪷GLOBAL_URL-->
+//--🪷GLOBAL_URL-->
 $(".Global_Url input").addEventListener("input",function(){
 var Videourl = this.value;
 var NScreens = $$(".Screen:not(.hide)").length;
@@ -1108,44 +1108,44 @@ for (var k  = 0; k < NScreens; k++) {
 videoplayer(Videourl, "mp4" , "", "", "#Player"+k+"", "#Data"+k+"", showlogo4url)}}})
  
 
-                             <!-- 💚💚💚💚💚💚 MIDDLE 💚💚💚💚💚💚 -->
-<!--🪷UNIQUE_URL-->
+                             //-- 💚💚💚💚💚💚 MIDDLE 💚💚💚💚💚💚 -->
+//--🪷UNIQUE_URL-->
 $$(".Unique_Url_Input").forEach(elem=>{elem.addEventListener("input",function(){
 var Videourl = elem.value;
 var playerid = elem.closest(".Screen").querySelector("section.Player").id;
 var dataid   = elem.closest(".Screen").querySelector("section.Text").id; 
 videoplayer(Videourl, "mp4" , "", "", "#"+playerid+"", "#"+dataid+"", showlogo4url)})})
  
- <!--🪷Checkbox-->
+ //--🪷Checkbox-->
 $$(".Checkbox").forEach(elem=>{elem.addEventListener("click",function(){
 $$(".Screen").forEach(el=>{el.classList.remove("Destination")});
 elem.closest(".Screen").classList.add("Destination");})})
 
 
-<!--🪷SERVERS--> 
+//--🪷SERVERS--> 
 $$(".Screen .datascreen.Servers").forEach(elem=>{elem.addEventListener("click",function(){
 if(elem.matches(".run")){
 $$("#"+elem.closest("section.Text").id+" .datascreen").forEach(el => {el.classList.add("hide")})
 $$("#"+elem.closest("section.Text").id+" .datascreen.server").forEach(el => {el.classList.remove("hide")})}})})
 
-<!--🪷TRACKS--> 
+//--🪷TRACKS--> 
 $$(".Screen .datascreen.Tracks").forEach(elem=>{elem.addEventListener("click",function(){
 if(elem.matches(".run")){
 $$("#"+elem.closest("section.Text").id+" .datascreen").forEach(el => {el.classList.add("hide")})
 $$("#"+elem.closest("section.Text").id+" .datascreen.track").forEach(el => {el.classList.remove("hide")})}})})
 
-<!--🪷DOWNLOADS--> 
+//--🪷DOWNLOADS--> 
 $$(".Screen .datascreen.Downloads").forEach(elem=>{elem.addEventListener("click",function(){
 if(elem.matches(".run")){
 $$("#"+elem.closest("section.Text").id+" .datascreen").forEach(el => {el.classList.add("hide")})
 $$("#"+elem.closest("section.Text").id+" .datascreen.download").forEach(el => {el.classList.remove("hide")})}})})
 
-<!--🪷SERVER TRACK DOWNLOAD CLOSE--> 
+//--🪷SERVER TRACK DOWNLOAD CLOSE--> 
 $$(".datascreen.server, .datascreen.track, .download").forEach(elem=>{elem.addEventListener("click",function(){
 $$("#"+elem.closest("section.Text").id+" .datascreen").forEach(el => {el.classList.add("hide")})
 $$("#"+elem.closest("section.Text").id+" .datascreen.original").forEach(el => {el.classList.remove("hide")})})}) 
 
-<!--🪷PLAYPAUSE-->
+//--🪷PLAYPAUSE-->
 $$(".Screen .datascreen.Play").forEach(elem=>{elem.addEventListener("click",function(){
 if(elem.matches(".run")){
 var Video = $("#"+elem.closest(".Screen").querySelector("section.Player").id+" video"); 
@@ -1154,14 +1154,14 @@ if (Video.paused) {Video.play();  elem.classList.remove("switch")}
 else              {Video.pause(); elem.classList.add("switch")}}})})
 
 
-<!--🪷MUTEUNMUTE-->
+//--🪷MUTEUNMUTE-->
 $$(".Screen .datascreen.Volume").forEach(elem=>{elem.addEventListener("click",function(){ 
 if(elem.matches(".run")){
 var Video = $("#"+elem.closest(".Screen").querySelector("section.Player").id+" video");
 if (Video.muted === false) {Video.muted = true;  elem.classList.remove("switch")} 
 else                       {Video.muted = false; elem.classList.add("switch")}}})})
  
-<!--🪷EXPAND-SCREEN->
+//--🪷EXPAND-SCREEN->
 $$(".Screen .datascreen.Expand").forEach(elem=>{elem.addEventListener("click",function(){ 
 if(elem.matches(".run")){
 if(elem.matches(".switch")){
@@ -1186,8 +1186,8 @@ resetContainerItems("#TCSMA-Screens", "TCSM-Area", "", "AutoSize",".Screen:not(.
 
 
 
-                             <!-- 💚💚💚💚💚💚 GRID1 💚💚💚💚💚💚 -->
-<!--🪷G1Span> 
+                             //-- 💚💚💚💚💚💚 GRID1 💚💚💚💚💚💚 -->
+//--🪷G1Span> 
 $$(".G1Span").forEach(elem=>{elem.addEventListener("click",function(){ 
 $$(".G1Span").forEach(el=>{el.classList.remove("active")});  
 $$(".G2Span, .G3Span").forEach(el=>{el.classList.add("hide"); el.classList.remove("run", "active")}); 
@@ -1199,8 +1199,8 @@ elem.classList.add("active");})})
 
 
 
-                             <!-- 💚💚💚💚💚💚 GRID2 💚💚💚💚💚💚 -->
-<!--🪷GRID2 BUTTONEXPAND--> 
+                             //-- 💚💚💚💚💚💚 GRID2 💚💚💚💚💚💚 -->
+//--🪷GRID2 BUTTONEXPAND--> 
 $(".Grid2Expand").addEventListener("click",function(){
 if(this.matches(".Opened")){
 this.classList.remove("Opened");    
@@ -1209,7 +1209,7 @@ else{
 this.classList.add("Opened");  
 $("#TCSM-Grid .Second.fst").classList.add("Expand");}}) 
 
-<!--🪷G2Span> 
+//--🪷G2Span> 
 $$(".G2Span").forEach(elem=>{elem.addEventListener("click",function(){ 
 $$(".G2Span").forEach(el=>{el.classList.remove("active")});  
 $$(".G3Span.run").forEach(el=>{el.classList.add("hide")});  
@@ -1218,8 +1218,8 @@ elem.classList.add("active");
 if(elem.matches(".toswitch")) {elem.querySelector(".toswitch").classList.add("switch")}})})  
 
 
-                             <!-- 💚💚💚💚💚💚 GRID3 💚💚💚💚💚💚 -->
-<!--🪷GRID3 Year-->
+                             //-- 💚💚💚💚💚💚 GRID3 💚💚💚💚💚💚 -->
+//--🪷GRID3 Year-->
 $$(".Year").forEach(elem=>{elem.addEventListener("click",function(){ 
 $$(".Year").forEach(el=>{el.classList.remove("active");});
 $(".Years").classList.add("hide"); 
@@ -1229,7 +1229,7 @@ $$(".G3Span.run").forEach(el=>{el.classList.add("hide")});
 $$(".G3Span.run."+elem.classList.item(0)).forEach(el=>{el.classList.remove("hide")});
 elem.classList.add("active");})})
 
-<!--🪷G3Span> 
+//--🪷G3Span> 
 $$(".G3Span").forEach(elem=>{elem.addEventListener("click",function(){ 
 if(elem.matches(".run")){ 
 $$(".G3Span").forEach(el=>{el.classList.remove("active","expand")});  
@@ -1239,14 +1239,14 @@ elem.classList.add("expand");
 $$(".G3Span.run, #TCSM-Grid .First, #TCSM-Grid .Second, #TCSM-Grid .Forth").forEach(el=>{el.classList.add("opac")});  
 $(".closeExpand").classList.remove("hide");}}})})  
 
-<!--🪷 CLOSE_EXPAND-->
+//--🪷 CLOSE_EXPAND-->
 $(".closeExpand").addEventListener("click",function(){ 
 this.classList.add("hide")
 $(".G3Span.run.active.expand").classList.remove("expand");
 $$(".G3Span,#TCSM-Grid .First,#TCSM-Grid .Second,#TCSM-Grid .Forth").forEach(el=>{el.classList.remove("opac")});})
 
-                             <!-- 💚💚💚💚💚💚 GRID4 💚💚💚💚💚💚 -->
-<!--🪷Grid4 YearST-->
+                             //-- 💚💚💚💚💚💚 GRID4 💚💚💚💚💚💚 -->
+//--🪷Grid4 YearST-->
 $(".YearST").addEventListener("click",function(){
 if(this.matches(".Opened"))        {
 this.classList.remove("Opened","switch"); 
@@ -1258,7 +1258,7 @@ this.classList.add("Opened","active","switch");
 $("#TCSM-Grid .Years").classList.remove("hide");}}) 
 
 
-<!--🪷Grid4 AUTOCOMPLETE--> 
+//--🪷Grid4 AUTOCOMPLETE--> 
 $(".Autocomplete").addEventListener("input",function(){
 const tofilter = document.querySelectorAll(".G3Span.run");
 const val1     = this.value.replaceAll("   ","  ").replaceAll("  "," ").replaceAll(" ","_");
@@ -1273,7 +1273,7 @@ tofilter[j].classList.add("show"); tofilter[j].classList.remove("hide");
 break;} 
 else{tofilter[j].classList.add("hide"); tofilter[j].classList.remove("show");}};};};})
 
-<!--🪷Grid4 YourUrl-->
+//--🪷Grid4 YourUrl-->
 $$(".Yoururl, .closeYoururls").forEach(elem=>{elem.addEventListener("click",function(){
 if(elem.matches(".Opened"))        {
 $(".Yoururl").classList.remove("Opened","switch");
@@ -1292,7 +1292,7 @@ $(".YourUrls").classList.remove("hide");}})})
 
 
 
-                         <!-- 💚💚💚💚💚💚 STREAM-SERVERS_TRACKS 💚💚💚💚💚💚 -->
+                         //-- 💚💚💚💚💚💚 STREAM-SERVERS_TRACKS 💚💚💚💚💚💚 -->
 
 function bigfilter(elem) {
 //♥️Text
@@ -1432,11 +1432,11 @@ $$(".Stream.inputstream").forEach (el=>el.addEventListener("click", ()=>{bigfilt
 
 let Stream   = document.querySelectorAll('.Stream');
 for (var s = 0; s    < Stream.length; s++) {
-Stream[s].addEventListener("click",function() {bigfilter(this)});}me.track").forEach(ele => {ele.classList.remove("active")});}
+Stream[s].addEventListener("click",function() {bigfilter(this)});}
 
-$$("#"+el.closest("section.Text").id+" .datascreen").forEach(ele => {ele.classList.add("hide")});
-$$("#"+el.closest("section.Text").id+" .datascreen.original").forEach(ele => {ele.classList.remove("hide")});
-el.classList.add("active")}))
- 
-//♥️Download 
-$$(".Downloadme
+
+
+
+
+
+
