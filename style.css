@@ -1,4 +1,4 @@
-//<!--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥♥️♥️ STYLE GLOBAL ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
+
 *, *::before, *::after,html  {outline : none; margin : 0; padding : 0; box-sizing : border-box;}
 ::-webkit-scrollbar          {width : 0.5px; height : 0.5px; border-radius : 10px;}
 ::-webkit-scrollbar-thumb    {background-color : rgb(21 20 26 / 23%); border-radius : 1px;}
@@ -25,11 +25,7 @@ $L-Theme    : lighten($Clr ,$L); $D-Theme  : darken($Clr ,$D);
 
 
 
- 
 
-
-
-//<!--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥♥️♥️ @MIXIN ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
 @mixin shadow($shadow, $Lshadow, $sz1, $br1, $sd1, $sz2, $br2, $sd2, $sz3, $br3, $sd3, $sz4, $br4, $sd4) {    
 box-shadow          :       $sz1 $sz1 $br1 $sd1 $shadow, $sz2 $sz2 $br2 $sd2 $Lshadow, 
                         inset $sz3 $sz3 $br3 $sd3 $shadow, inset $sz4 $sz4 $br4 $sd4 $Lshadow;} 
@@ -158,7 +154,7 @@ var(--H-inputfs), var(--H-inputfwght), var(--H-inputff), var(--H-inputmaxh), var
 
 
 
-//<!--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥♥️♥️♥️♥️♥♥️♥️♥♥️♥️ ALL CONTAINERS AUTOMATISME ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
+
 #All-Containers     {
 & .CENTER           { 
  
@@ -179,7 +175,6 @@ var(--H-inputfs), var(--H-inputfwght), var(--H-inputff), var(--H-inputmaxh), var
 
 
 
-//<!--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥♥️♥️ ALL CONTAINERS ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
 :root               {--max-h : 100%; --max-w : 100%; --Cont-pd : clamp(10px,2vh,40px); --Cont-rd : 10px;}
 
 #All-Containers     {padding  : var(--Cont-pd); height : 100vh;  display : flex; background : var(--colorbg);
@@ -194,7 +189,7 @@ var(--H-inputfs), var(--H-inputfwght), var(--H-inputff), var(--H-inputmaxh), var
 & .BOTTOM           {}}}
 
 
-//<!--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥♥️♥♥️♥️♥️ LANDING STREAMING ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
+//<--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥♥️♥♥️♥️♥️ LANDING STREAMING ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
 
 #Landing        {display : flex; flex-direction : column; justify-content : center; gap : 30px; 
 & img           {position   : absolute; width   : 100%; height : 100%; opacity : 0.5; visibility : hidden;
@@ -213,7 +208,7 @@ var(--H-inputfs), var(--H-inputfwght), var(--H-inputff), var(--H-inputmaxh), var
 &.Footer        {height  : calc(var(--TCS-H-h) * var(--TCS-F-c));}}}
 
 
-//<!--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥♥️♥️♥♥️♥♥♥️♥️♥️ HEADER ♥️♥️♥️♥️♥️♥️♥️♥️♥♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
+//<--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥♥️♥️♥♥️♥♥♥️♥️♥️ HEADER ♥️♥️♥️♥️♥️♥️♥️♥️♥♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
 :root {
 --TCS-H-h       : clamp(59px,10.5vh,120px);  --TCS-H-pdb       : clamp(10px, 1.5vh, 30px);
 --TCS-H-span-pd : clamp(1px, 0.88vh, 20px) clamp(2px,2.2vw,40px); 
@@ -255,7 +250,7 @@ var(--H-inputfs), var(--H-inputfwght), var(--H-inputff), var(--H-inputmaxh), var
 &.FilterCategory{width : 40%; flex-wrap : wrap; & section.Text {border-radius : 0px 10px 10px 0px;}}}}}}}
  
 
-//<!--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥♥️♥️♥♥️♥️♥♥♥️♥️♥️ LEFT RIGHT ♥️♥️♥️♥️♥️♥️♥♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
+//<--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥♥️♥️♥♥️♥️♥♥♥️♥️♥️ LEFT RIGHT ♥️♥️♥️♥️♥️♥️♥♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
 
 #All-Containers .Streaming {
 & .Left, & .Right{display : flex; flex-direction : column; justify-content : center; align-items : center;                         gap : 12px;} 
@@ -269,7 +264,7 @@ var(--H-inputfs), var(--H-inputfwght), var(--H-inputff), var(--H-inputmaxh), var
                  font-weight : 500; font-size : 80px; &.FA {font-family : FontAwesome;}}}}}}
 
 
-//<!--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥♥️♥️♥♥️♥♥♥️♥️♥️ MIDDLE AREA ♥️♥️♥️♥️♥️♥️♥♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
+//<--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥♥️♥️♥♥️♥♥♥️♥️♥️ MIDDLE AREA ♥️♥️♥️♥️♥️♥️♥♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
 @keyframes mouveIv {
 	0% {transform: translate(0,0);}  100% {transform: translate(-2500%,0)}}
 
@@ -317,7 +312,7 @@ var(--H-inputfs), var(--H-inputfwght), var(--H-inputff), var(--H-inputmaxh), var
 &.Destination     {& section.Text button.Checkbox{background:lime;}}}}}}
 
 
-//<!--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥♥️♥️♥♥️♥♥♥️♥️♥️ GRID FIRST ♥️♥️♥️♥️♥️♥️♥♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
+//<--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥♥️♥️♥♥️♥♥♥️♥️♥️ GRID FIRST ♥️♥️♥️♥️♥️♥️♥♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
 
 :root { 
 --TCSMG-pd         :  clamp(20px , 1.6vh, 60px) clamp(5px , 1.6vh, 60px) 
@@ -340,7 +335,7 @@ var(--H-inputfs), var(--H-inputfwght), var(--H-inputff), var(--H-inputmaxh), var
 & button       {@include HeaderButton;}}}}} 
 
 
-//<!--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥♥️♥️♥♥️♥♥♥️♥️♥️ GRID SECOND ♥️♥️♥️♥️♥️♥️♥♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
+//<--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥♥️♥️♥♥️♥♥♥️♥️♥️ GRID SECOND ♥️♥️♥️♥️♥️♥️♥♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->
 
 :root {
 --TCSMG-Second-w         : clamp(22px,1.6vw,30px);      --TCSMG-Second-h            : clamp(60px, 6.5vh, 200px);
@@ -369,7 +364,7 @@ var(--H-inputfs), var(--H-inputfwght), var(--H-inputff), var(--H-inputmaxh), var
 &.elem             {& text {fill : var(--colortxt); font-size : 70px;}}}}}}}
  
 
-//<!--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ GRID THIRD ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->\\ 
+//<--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ GRID THIRD ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->\\ 
 
 :root {
 --TCSMG-Third-pd        : clamp(3px, 2vh, 100px);      --TCSMG-Third-span-pd    : clamp(6px, 1vh, 12px); 
@@ -482,7 +477,7 @@ var(--H-inputfs), var(--H-inputfwght), var(--H-inputff), var(--H-inputmaxh), var
 
 
 
-//<!--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ GRID FORTH ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->\\ 
+//<--- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ GRID FORTH ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️ --->\\ 
 
 :root{
 --TCSMG-Forth-h    : clamp(30px, 2.5vh, 200px);}
