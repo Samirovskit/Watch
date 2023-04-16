@@ -1432,11 +1432,11 @@ $$(".Stream.inputstream").forEach (el=>el.addEventListener("click", ()=>{bigfilt
 
 let Stream   = document.querySelectorAll('.Stream');
 for (var s = 0; s    < Stream.length; s++) {
-Stream[s].addEventListener("click",function() {bigfilter(this)});}
+Stream[s].addEventListener("click",function() {bigfilter(this)});}me.track").forEach(ele => {ele.classList.remove("active")});}
 
-
-
-
-
-
-
+$$("#"+el.closest("section.Text").id+" .datascreen").forEach(ele => {ele.classList.add("hide")});
+$$("#"+el.closest("section.Text").id+" .datascreen.original").forEach(ele => {ele.classList.remove("hide")});
+el.classList.add("active")}))
+ 
+//♥️Download 
+$$(".Downloadme
